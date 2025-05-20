@@ -127,11 +127,37 @@ hr {
   color: white;
 }
 
+.nft-card__image {
+  position: relative;
+}
+
+.nft-card__overlay {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  inset: 0;
+  background-color: rgba(0, 255, 248, 0.5);
+  opacity: 0;
+  border-radius: 8px;
+}
+
+.nft-card__overlay img {
+  width: 44px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (min-width: 1025px) {
-  .nft-card__title:hover, .nft-card__name:hover {
+  .nft-card__title:hover,
+  .nft-card__name:hover {
     color: var(--cyan-400);
     cursor: pointer;
+  }
+
+  .nft-card__image:hover .nft-card__overlay {
+    opacity: 1;
   }
 }
