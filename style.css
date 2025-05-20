@@ -126,3 +126,12 @@ hr {
   line-height: auto;
   color: white;
 }
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1025px) {
+  .nft-card__title:hover, .nft-card__name:hover {
+    color: var(--cyan-400);
+    cursor: pointer;
+  }
+}
